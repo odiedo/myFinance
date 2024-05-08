@@ -52,13 +52,19 @@
         }
         @keyframes scale {
             0% {
+                color: blueviolet;
                 transform: scale(1);
+                text-shadow: 0 0 10px yellow;
             }
             50% {
+                color: blueviolet;
                 transform: scale(1.1);
+                text-shadow: 0 0 20px yellowgreen;
             }
             100% {
+                color: blueviolet;
                 transform: scale(1);
+                text-shadow: 0 0 50px yellow;
             }   
         }
         
@@ -145,7 +151,8 @@
 
                     <!-- Balance -->
                     <div class="balance text-center p-4 m-4">
-                        <p><h6>Your Balance:</h6> <h1 style="font-weight: 900; animation: scale 3s infinite;">Kshs. 1,000</h1></p>
+                            <a class="btn" style="text-decoration: none; font-weight: 900;color: white; animation: scale 5s infinite;" data-toggle="modal" data-target="#saveModal"><i class="fas fa-piggy-bank fa-5x p-2"></i></a>
+                            <h6 style="color: #000; font-weight: 900;">save now</h6>
                     </div>
 
                     <div class="row " style="line-height:10px; color: blueviolet; font-weight: 900">
@@ -168,7 +175,7 @@
 
             
             <!-- save modal -->
-            <div class="modal fade " id="saveModal" tabindex="-1" role="dialog" aria-labelledby="SaveModalModalTitle" aria-hidden="true" style="box-shadow: 0 2px 6px 0 blueviolet; background:#0009">
+            <div class="modal fade " id="saveModal" tabindex="-1" role="dialog" aria-labelledby="SaveModalModalTitle" aria-hidden="true" style="background:#0009">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header shadow">
@@ -179,9 +186,9 @@
                     </div>
                     <div class="modal-body">
                         <small>Amount:</small>
-                        <input type="text" class="form-control  border-success" placeholder="Amount to be saved" style="outline: none;">
+                        <input type="text" id="amount" class="form-control border-success" placeholder="Save amount" style="outline: none; ">
                         <small>Phone no:</small>
-                        <input type="number" class="form-control border-success" placeholder="Mpesa phone number">
+                        <input type="text" id="phoneNumber" class="form-control border-success" placeholder="Phone Number" style="outline: none; ">
                         <small>Select Card:</small>
                         <select name="cards" class="form-control border-success">
                             <option disabled selected> Select card</option>
@@ -192,7 +199,7 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-danger" style=" font-weight: 700; color: #fff" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success" style=" font-weight: 700; color: #fff">Process</button>
+                    <button type="button" class="btn btn-danger" style="font-weight: 700; color: #fff" onclick="processSavings()">Process</button>
                     </div>
                 </div>
                 </div>
@@ -296,7 +303,7 @@
             })
         })()
     </script>
-    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>    
     <script src="assets/dist/js/bootstrap.bundle.js"></script>
     <script src="assets/dist/js/bootstrap.min.js"></script>
 </body>

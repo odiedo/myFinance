@@ -151,23 +151,27 @@
                             <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Saving trend</h5>
                             <canvas id="lineChart" style="max-width: 600px;"></canvas>
                         </div>
-                        <div class="col-md-4 pt-4 mb-4 border-bottom">
-                            <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Savings</h5>
-                            <small class="d-flex justify-content-between"><span>1. Emergency:</span> <span> 500 <i class="text-danger">(9,500)</i> </span></small><br>
-                            <small class="d-flex justify-content-between"><span>2. Clothes:</span> <span> 3,500 <i class="text-danger">(500)</i> </span></small><br>
-                            <small class="d-flex justify-content-between"><span>3. Random:</span> <span> 200 <i class="text-danger">(300)</i> </span></small><br>
-                        </div>
-                        <div class="col-md-4 pt-4 mb-4 border-bottom">
-                            <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Trends</h5>
-                            <small class="d-flex justify-content-between"><span>1. Frequently saved card:</span> <span>Emergency </span></small><br>
-                            <small class="d-flex justify-content-between"><span>2. Highest saved amount:</span> <span>5,000 </span></small><br>
-                            <small class="d-flex justify-content-between"><span>3. Highest withdrawn amount:</span> <span>3,000 </span></small><br>
-                        </div>
-                        <div class="col-md-4 pt-4 mb-4 border-bottom">
-                            <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Recent Transactions</h5>
-                            <small class="d-flex justify-content-between"><span>1. saved:</span> <span><i class="fas fa-arrow-up text-success"></i> Kshs. 500 </span></small><br>
-                            <small class="d-flex justify-content-between"><span>2. Withdraw:</span> <span><i class="fas fa-arrow-down text-danger"></i> Kshs. 500</span></small><br>
-                            <small class="d-flex justify-content-between"><span>3. saved:</span> <span><i class="fas fa-arrow-up text-success"></i> Kshs. 2500</span></small><br>
+                        <div class="container-fluid col-md-8">
+                            <div class="row">
+                                <div class="col-md-6 pt-4 mb-4 border-bottom">
+                                    <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Savings</h5>
+                                    <small class="d-flex justify-content-between"><span>1. Emergency:</span> <span> 500 <i class="text-danger">(9,500)</i> </span></small><br>
+                                    <small class="d-flex justify-content-between"><span>2. Clothes:</span> <span> 3,500 <i class="text-danger">(500)</i> </span></small><br>
+                                    <small class="d-flex justify-content-between"><span>3. Random:</span> <span> 200 <i class="text-danger">(300)</i> </span></small><br>
+                                </div>
+                                <div class="col-md-6 pt-4 mb-4 border-bottom">
+                                    <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Trends</h5>
+                                    <small class="d-flex justify-content-between"><span>1. Frequently saved card:</span> <span>Emergency </span></small><br>
+                                    <small class="d-flex justify-content-between"><span>2. Highest saved amount:</span> <span>5,000 </span></small><br>
+                                    <small class="d-flex justify-content-between"><span>3. Highest withdrawn amount:</span> <span>3,000 </span></small><br>
+                                </div>
+                                <div class="col-md-6 pt-4 mb-4 border-bottom">
+                                    <h5 style="font-weight: 900; color: #000; font-family: cursive ;">Recent Transactions</h5>
+                                    <small class="d-flex justify-content-between"><span>1. saved:</span> <span><i class="fas fa-arrow-up text-success"></i> Kshs. 500 </span></small><br>
+                                    <small class="d-flex justify-content-between"><span>2. Withdraw:</span> <span><i class="fas fa-arrow-down text-danger"></i> Kshs. 500</span></small><br>
+                                    <small class="d-flex justify-content-between"><span>3. saved:</span> <span><i class="fas fa-arrow-up text-success"></i> Kshs. 2500</span></small><br>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Transaction buttons -->
@@ -306,7 +310,7 @@
           data: {
             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
             datasets: [{
-              label: 'Sales',
+              label: 'Savings',
               data: [12, 19, 3, 5, 2, 3],
               backgroundColor: 'rgba(54, 162, 235, 0.2)',
               borderColor: 'rgba(54, 162, 235, 1)',
